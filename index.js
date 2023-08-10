@@ -8,6 +8,12 @@ mongodb()
 app.get('/',(req,res)=>{
     res.send("hii")
 })
+app.get('/api/loginuser',(req,res)=>{
+    res.send("loginpage")
+})
+app.get('/api/signup',(req,res)=>{
+    res.send("signuppage")
+})
 app.use(cors())
 app.use(express.json())
 app.use('/api',require('./routes/signup.js'))
