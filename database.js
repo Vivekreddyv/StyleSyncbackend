@@ -1,5 +1,5 @@
 const mongoose=require('mongoose')
-const mongodbURI="mongodb+srv://StyleSync:StyleSync8797@cluster0.noajjph.mongodb.net/StyleSyncmern?retryWrites=true&w=majority"
+const mongodbURI=process.env.mongodbURI
 
 
 const mongodb=async()=>{
